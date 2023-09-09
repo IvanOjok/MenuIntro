@@ -10,24 +10,44 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:background="#F3BEAD"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="19dp"
-        tools:src="@tools:sample/avatars" />
-
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/settings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        tools:src="@drawable/ic_launcher_foreground" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FF5722"
+        android:text="@string/sign_in"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="162dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="92dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,8 @@
     <style name="Base.Theme.MenuIntro" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">#F7BEAC</item>
+        <item name="android:colorPrimary">#FF5722</item>
     </style>
 
     <style name="Theme.MenuIntro" parent="Base.Theme.MenuIntro" />
